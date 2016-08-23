@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="store">
+
+<head>
+        <meta charset="utf-8" />
+        <title>Dictator</title>
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+		<link rel="stylesheet" type="text/css" href="css/dictator.css" />
+		<script src="js/test.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/jquery-3.0.0.min.js"></script>
+</head>
+<body>
+<div class="conteneur">
+<div class="page-header">
+	<h1>Dictator</h1>
+</div>
+
+	<div class="nav_bar">
+		<ul id="menu">
+			<li><input type="button" class="myButton" value="Accueil" onclick="load_home()"></li>
+			<li><input type="button" class="myButton" value="Inscription"></li>
+			<li><input type="button" class="myButton" value="Connexion"></li>
+			<li><input type="button" class="myButton" value="Jouer"></li>
+			<li><a href="http://twitter.com/share" class="twitter-share-button" 
+  data-count="vertical" data-via="InfoWebMaster">Tweet</a>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+
+			<li><iframe src="http://www.facebook.com/plugins/like.php?href=http://www.example.com/page.html&layout=box_count&show_faces=true&width=65&action=like&font=arial&colorscheme=light&height=65" 
+				scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:65px; margin-top:3px;" allowTransparency="true"></iframe></li>
+  
+			<li><a name="https://www.facebook.com/serge.casado" type="box_count" share_url="http://www.example.com/page.html"></a>
+				<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></li>
+
+			<li><g:plusone size="tall"></g:plusone></li>
+
+
+		</ul>	
+	</div>
+	<div id="dictee">
+		<textarea class="paper" id="texte_utilisateur" spellcheck="false"></textarea></br>
+		<input class="myButton "type="button" onclick="comparer(texte_utilisateur)" value="valider">	
+	</div>
+</div>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'fr'}</script>
+</body>
+</html>
